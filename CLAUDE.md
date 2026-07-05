@@ -30,6 +30,17 @@ Notes and research on image optimization tooling for macOS.
 - **GIF:** `gifsicle`
 - **SVG:** `svgo` or `svgcleaner`
 
+### ImageOptim vs Optimage (head-to-head, verified 2026-07)
+
+| | ImageOptim | Optimage |
+|---|---|---|
+| Price / source | Free, open source | Paid, closed source (free tier ~24 imgs/day) |
+| Quality tuning | Fixed sliders (93% JPEG / 80% PNG) | Automatic per-image visually-lossless quality |
+| WebP / AVIF / HEIC | **No** — JPEG/PNG/GIF/SVG only (WebP is a still-open GitHub request since 2018) | Yes, incl. conversion; also video & PDF |
+| Extras | CLI mode (hidden) | Resizing, folder watching, proper CLI |
+
+Verdict: Optimage wins only on auto-quality + modern formats. For in-place lossless JPEG/PNG squeezing, ImageOptim is equal and free.
+
 ### Pooya's taste / evaluation notes (2026-07)
 
 - **Squash 3**: rejected — very old, cluttered UI, stagnant development.
